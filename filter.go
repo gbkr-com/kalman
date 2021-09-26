@@ -29,7 +29,7 @@ func (p *Filter) Observe(z float64) {
 	p.p *= 1 - k
 }
 
-// New returns Kalman filter for the given initial observation.
+// New returns a Kalman filter for the given initial observation.
 //
 func New(x float64) *Filter {
 	return &Filter{
